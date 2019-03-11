@@ -4,6 +4,7 @@ buildscript {
     ext.kotlin_version = '1.2.50'
     println System.getenv( 'RELEASE_NOTE' )
     println System.getenv( 'MY_RELEASE_NOTE' )
+    ext.betaDistributionReleaseNotes=System.getenv( 'RELEASE_NOTE' )
     repositories {
         google()
         jcenter()
